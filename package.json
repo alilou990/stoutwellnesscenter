@@ -2,6 +2,8 @@
   "name": "stout-wellness-center",
   "version": "0.1.0",
   "private": true,
+  "main": "server/index.js",
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -9,6 +11,7 @@
     "massive": "^6.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-multi-carousel": "^2.4.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
@@ -31,6 +34,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/"
     ]
   }
 }
